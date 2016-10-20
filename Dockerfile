@@ -4,7 +4,7 @@ MAINTAINER sweet <sweet123951@gmail.com>
 ENV TEMP_PATH=/temp
 
 # update
-RUN apt-get update && apt-get install wget && apt-get clean
+RUN apt-get update && apt-get install -y wget && apt-get clean
 
 RUN mkdir ${TEMP_PATH} -p
 WORKDIR ${TEMP_PATH}
